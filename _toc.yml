@@ -1,0 +1,32 @@
+root: 01_About
+entries:
+- file: LICENSE
+- file: README
+- file: 01_Day_1/0_README
+  entries:
+  - file: 01_Day_1/icebreaker
+  - file: 01_Day_1/excercises/B0_Excercise
+    entries:
+    - file: 01_Day_1/excercises/B1_exercise
+  - file: 01_Day_1/reads/00_README
+    entries:
+    - file: 01_Day_1/reads/R0_Bash
+    - file: 01_Day_1/reads/R1_Dist_V_Control
+- file: 02_Day_2/README
+  entries:
+  - file: 02_Day_2/exercise/00_README
+  - file: 02_Day_2/reads/00_README
+    entries:
+    - file: 02_Day_2/reads/R0_Python_QGIS
+- file: 03_Day_n/README
+  entries:
+  - file: 03_Day_n/exercise/00_README
+  - file: 03_Day_n/reads/00_README
+- file: 04_Follow_up/README
+- file: 05_Intructor_notes/README
+  entries:
+  - file: 05_Intructor_notes/Day_1/README
+  - file: 05_Intructor_notes/Day_2/README
+  - file: 05_Intructor_notes/Day_3/README
+  - file: 05_Intructor_notes/Wrap_up/README
+
