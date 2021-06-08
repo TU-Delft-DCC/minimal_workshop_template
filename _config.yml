@@ -11,7 +11,7 @@ exclude_patterns: [LICENSE.md]
 
 # Information about where the book exists on the web
 repository:
-  url  : https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS.git
+  url  : TU-Delft-DCC/minimal_workshop_template
 
 
 
