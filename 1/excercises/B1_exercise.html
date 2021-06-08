@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example of excercise written in markdown &#8212; A template in jupyter books to prepare and run workshops</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "user-organization-name/repo-name");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="READS DAY 1 Example" href="../reads/00_README.html" />
+    <link rel="prev" title="EXERCISES DAY 1 Example" href="B0_Excercise.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">A template in jupyter books to prepare and run workshops</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../README.html">
+   Your workshop title
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../0_Prep/01_icebreaker.html">
+   Introduction
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../README.html">
+   DAY 1
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="B0_Excercise.html">
+     EXERCISES DAY 1 Example
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Example of excercise written in markdown
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../reads/00_README.html">
+     READS DAY 1 Example
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reads/R0_Bash.html">
+       Unix Shell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../reads/R1_Dist_V_Control.html">
+       <strong>
+        Distributed version control
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../2/README.html">
+   DAY 2
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2/exercise/00_README.html">
+     EXERCISES DAY 2
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../2/reads/00_README.html">
+     READS DAY 2
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../2/reads/R0_Python_QGIS.html">
+       Working with the Python console in QGIS
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../3/README.html">
+   DAY 3
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../3/exercise/00_README.html">
+     EXERCISES DAY 3
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../3/reads/00_README.html">
+     READS DAY 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../4/README.html">
+   FOLLOW UP
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../5/README.html">
+   Instructor notes
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../5/Day_1/README.html">
+     DAY 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../5/Day_2/README.html">
+     DAY N
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../5/Day_3/README.html">
+     DAY N
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../5/Wrap_up/README.html">
+     Followup notes
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/1/excercises/B1_exercise.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/the-magnificents/04-02-2021-Carpentry-for-HGIS.git"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#work-with-the-bash-shell">
+   Work with the bash shell
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#select-and-concatenate-data-files">
+     Select and concatenate data files
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="example-of-excercise-written-in-markdown">
+<h1>Example of excercise written in markdown<a class="headerlink" href="#example-of-excercise-written-in-markdown" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="work-with-the-bash-shell">
+<h2>Work with the bash shell<a class="headerlink" href="#work-with-the-bash-shell" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="select-and-concatenate-data-files">
+<h3>Select and concatenate data files<a class="headerlink" href="#select-and-concatenate-data-files" title="Permalink to this headline">¶</a></h3>
+<p>In Bash, <code class="docutils literal notranslate"><span class="pre">*</span></code> is a wildcard, which matches zero or more characters. When the shell sees a wildcard, it expands the wildcard to create a list of matching filenames before running the command that was asked for. As an exception, if a wildcard expression does not match any file, Bash will pass the expression as an argument to the command as it is. For example typing <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">*.pdf</span></code> in the <code class="docutils literal notranslate"><span class="pre">mountain_data/</span></code> directory (which does not contains any pdf files) results in an error message that there is no file called <code class="docutils literal notranslate"><span class="pre">*.pdf</span></code>.</p>
+<p>Here’s how the wildcard works in practice: <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> matches annapurna-np.txt, chooyu-np.txt and every file that ends with ‘.txt’. On the other hand, <code class="docutils literal notranslate"><span class="pre">n*.txt</span></code> only matches nangaparbat-pl.txt because the ‘n’ at the front only matches filenames that begin with the letter ‘n’.</p>
+<div class="admonition-exercise-explore-data-files admonition">
+<p class="admonition-title">Exercise: Explore data files</p>
+<p>Take a look at the contents of the <code class="docutils literal notranslate"><span class="pre">mountain_data/</span></code> directory. Use <code class="docutils literal notranslate"><span class="pre">ls</span></code> and <code class="docutils literal notranslate"><span class="pre">cat</span></code> to inspect the names, file extensions and contents of the files. What patterns and information do you see? <strong>Tip:</strong> you can write your observations in comments section of the workshop website, and see what others observed. :)</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>The names of all the text files in the <code class="docutils literal notranslate"><span class="pre">mountain_data/</span></code> directory follow a standard pattern, <code class="docutils literal notranslate"><span class="pre">mountainname-countrycode.txt</span></code>. This is good practice when working with Bash - it is much easier to ask the computer to find and do something with files that match a convention in their names. You’ll also see that there are no spaces in any filenames, and no capital letters. Instead, we see a lot of dashes.</p>
+<p>We have three types of data files in the <code class="docutils literal notranslate"><span class="pre">mountain_data/</span></code> directory: .txt, .jpg, and .md. The only .md file is called <a class="reference external" href="http://README.md">README.md</a>, and contains some very brief information about the data and the imaginary project they were collected for. It is good practice as well to include a <a class="reference external" href="http://README.md">README.md</a> file with any code or data project, and to fill it with documentation that can help you or someone else replicate the data and/or the results of your research.</p>
+</div>
+<div class="admonition-exercise-select-and-concatenate-data-files admonition">
+<p class="admonition-title">Exercise: Select and concatenate data files</p>
+<p>Right now, the data for each mountain in the <code class="docutils literal notranslate"><span class="pre">mountain_data/</span></code> folder are each stored in separate files per mountain. That might be helpful for some applications, but we want a list of data in one .txt file called tallest-mountains.txt. How could we do that? <strong>Hint:</strong> We did this during the teaching session for all mountains in Nepal. The command to use starts with an ‘a’ and reminds me of my teenage years… :)</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>We can use the wildcard <code class="docutils literal notranslate"><span class="pre">*</span></code> to grab all the .txt files this time in the <code class="docutils literal notranslate"><span class="pre">mountain_data</span></code> folder. We want to concatenate the contents of every txt file in the folder, so we should use <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> to match all the files in the directory. To concatenate, we use the <code class="docutils literal notranslate"><span class="pre">awk</span></code> command (used for pattern scanning and processing) along with the 1 flag which automatically inserts a new line between the data from each of the separate files. The <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> symbol will concatenate the contents of all files that match this naming pattern to a new file that we define, in this case called tallest-mountains.txt.</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">awk</span> <span class="pre">1</span> <span class="pre">*.txt</span> <span class="pre">&gt;</span> <span class="pre">tallest-mountains.txt</span></code></p>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">ls</span></code> to see the files in the <code class="docutils literal notranslate"><span class="pre">mountain_data/</span></code> folder, and <code class="docutils literal notranslate"><span class="pre">cat</span></code> to check out the contents of the newly created <code class="docutils literal notranslate"><span class="pre">tallest-mountains.txt</span></code>.</p>
+</div>
+<div class="admonition-exercise-add-data-to-tallest-mountains-txt admonition">
+<p class="admonition-title">Exercise: add data to tallest-mountains.txt</p>
+<p>Right now, the tallest-mountains.txt file contains geographic and population data for the 10 tallest mountains in the world. A good start, but there are many more cool mountains in the world! Add a few more mountains to the tallest-mountains.txt file using nano on the command line. Don’t forget to keep the same format as the rest of the data: name, lat, lon, height in meters, successful ascents(pre-2004), unsuccessful ascents(pre-2004). <strong>Hint:</strong> You can find a link to the data source in the <code class="docutils literal notranslate"><span class="pre">mountain_data/README.md</span></code> file.</p>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">See Solution</p>
+<p>Use nano to open the tallest-mountains.txt file to add some data for other mountains in the world. Make sure you start a new line for each mountain you add.</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">mountain_data</span></code>
+<code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">nano</span> <span class="pre">tallest-mountains.txt</span></code></p>
+<p>Hit shift + control + O to “WriteOut” the file (save it). Nano will ask you if you want to save this file with the same name, and we do, so hit enter. You can then hit shift + control + X to exit the Nano text editor and get back to your Bash shell.</p>
+<p>You can do the same process to edit the <a class="reference external" href="http://README.md">README.md</a> file: <code class="docutils literal notranslate"><span class="pre">nano</span> <span class="pre">README.md</span></code> will open the editor and allow you to insert information about the sources of your data.</p>
+<p>If you now use cat to check out the contents of your file(s), you should see the changes you’ve made:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cat</span> <span class="pre">tallest-mountains.txt</span></code> ; <code class="docutils literal notranslate"><span class="pre">cat</span> <span class="pre">README.md</span></code></p>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./1/excercises"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="B0_Excercise.html" title="previous page">EXERCISES DAY 1 Example</a>
+    <a class='right-next' id="next-link" href="../reads/00_README.html" title="next page">READS DAY 1 Example</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
