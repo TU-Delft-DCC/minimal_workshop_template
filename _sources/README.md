@@ -4,12 +4,23 @@
 This website hosts materials, exercises and lessons for a N-day course on __________ offered by_______. Materials and website created by _____Authors______ of the ____Organization_____. 
 
 ## Workshop overview
+```{note}
 Provide a quick overview
+```
+**Example**
+> Are you interested in learning to program with Python? Are you working with geospatial data or interested in working with geospatial data? Would you like to apply computational thinking and data analysis tools to your research?
+
+> This 3-day long workshop is for beginners with zero programming experience. We are going to work with very simple geospatial datasets as examples, but it is not exclusive or focused only on GIS.
+
+> By the end of this workshop, you will learn fundamental concepts of programming with python, version control, and how to work with the command line. We will also demonstrate how these tools are useful and make sense in the context of GIS. We hope to get you inspired and motivated to use these tools in your future research!
+
 
 ## General considerations for this workshop
-Provide context of prerequisits and prepar
-
-**This workshop is composed of two complementary and important sessions**. During the morning sessions we provide guidance, examples and space for discussion; and during the afternoon sessions you are required to practice and apply the concepts and knowledge provided with step-by-step exercises. Your instructors will be available and ready to answer questions if you need help, but you should really try to do these on your own (see below for some tips).
+```{note}
+Provide prerequisites and considerations for this workshop.
+```
+**Example**
+> **This workshop is composed of two complementary and important sessions**. During the morning sessions we provide guidance, examples and space for discussion; and during the afternoon sessions you are required to practice and apply the concepts and knowledge provided with step-by-step exercises. Your instructors will be available and ready to answer questions if you need help, but you should really try to do these on your own (see below for some tips).
 
 ## Participation guidelines
 ```{note}
@@ -43,4 +54,9 @@ Provide a checklist for participants to go through. See the example bellow and r
 If you have any questions about these steps before the workshop, please reach out to Ashley (a.e.cryan@tudelft.nl) and Jose (j.c.urrallanusa@tudelft.nl) before we get started!
 
 ## Credits and acknowledgements
-This lesson material is based upon the Software Carpentries lesson on [The Unix Shell](http://swcarpentry.github.io/shell-novice/), Andrea Cleland's [Turtle Graphics Map](https://github.com/acleland/turtle-graphics-map) repository, the [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/) lesson from the Software Carpentries, and Gizmo ["Can you speak Python?" challenges](https://github.com/wmvanvliet/gizmo) repository by Marijn van Vliet. We thank the authors for their inspiration and material :) 
+
+```{note}
+Aknowledge materials and authors that have inspired your workshop
+```
+**Example**
+> This lesson material is based upon the Software Carpentries lesson on [The Unix Shell](http://swcarpentry.github.io/shell-novice/), Andrea Cleland's [Turtle Graphics Map](https://github.com/acleland/turtle-graphics-map) repository, the [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/) lesson from the Software Carpentries, and Gizmo ["Can you speak Python?" challenges](https://github.com/wmvanvliet/gizmo) repository by Marijn van Vliet. We thank the authors for their inspiration and material :) 
