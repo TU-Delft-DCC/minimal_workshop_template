@@ -1,7 +1,7 @@
 # Your workshop title
 ![](images/map_delft.jpg)
 
-This website hosts materials, exercises and lessons for a N-day course on __________ offered by_______. Materials and website created by _____Authors______ of the ____Organization_____. 
+This website hosts materials, exercises and lessons for a N-day course on __________ offered by_______. Materials and website created by _______ Authors ________ of the ____ Organization _____. 
 
 ## Workshop overview
 ```{note}

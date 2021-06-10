@@ -11,7 +11,7 @@ exclude_patterns: [LICENSE.md]
 
 # Information about where the book exists on the web
 repository:
-  url  : TU-Delft-DCC/minimal_workshop_template
+  url  : https://github.com/TU-Delft-DCC/minimal_workshop_template
 
 
 
